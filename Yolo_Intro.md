@@ -50,9 +50,6 @@ A **labeled dataset** means:
 car → (x, y, width, height)
 number_plate → (x, y, w, h)
 
-markdown
-Copy code
-
 **Common labeling tools:**
 - LabelImg  
 - Roboflow  
@@ -202,7 +199,3 @@ YOLO learns:
 
 > **“In my project, YOLO was trained using labeled vehicle images so it could reliably detect vehicles in traffic videos.”**
 """
-
-file_path = "/mnt/data/Train_YOLO_Explanation.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(content)
