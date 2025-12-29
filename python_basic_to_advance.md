@@ -312,4 +312,267 @@ Library for fast array and matrix operations.
 **Answer:**
 Used for data analysis and preprocessing using DataFrames.
 
+---
+
+## 🔹 OBJECT-ORIENTED & ADVANCED PYTHON
+
+### 3️⃣1️⃣ What is `__init__` method?
+**Answer:**  
+`__init__` is a constructor automatically called when an object is created.  
+It is used to initialize variables.
+
+```python
+class Car:
+    def __init__(self, name):
+        self.name = name
+````
+
+---
+
+### 3️⃣2️⃣ What is `__str__` and `__repr__`?
+
+**Answer:**
+
+* `__str__` → user-friendly output
+* `__repr__` → developer/debug-friendly output
+
+---
+
+### 3️⃣3️⃣ What is method overloading in Python?
+
+**Answer:**
+Python does not support traditional method overloading.
+We use **default arguments** or `*args`.
+
+---
+
+### 3️⃣4️⃣ What is method overriding?
+
+**Answer:**
+A child class provides its own implementation of a parent class method.
+
+---
+
+### 3️⃣5️⃣ What is encapsulation?
+
+**Answer:**
+Wrapping data and methods together and restricting direct access using `_` or `__`.
+
+---
+
+### 3️⃣6️⃣ What is abstraction?
+
+**Answer:**
+Hiding internal implementation details and showing only essential features.
+
+---
+
+### 3️⃣7️⃣ What are abstract base classes?
+
+**Answer:**
+Classes that contain abstract methods using the `abc` module.
+
+---
+
+### 3️⃣8️⃣ What is duck typing?
+
+**Answer:**
+Python focuses on object behavior, not type.
+“If it walks like a duck, it’s a duck.”
+
+---
+
+### 3️⃣9️⃣ What is `with` statement?
+
+**Answer:**
+Used for resource management (file, lock).
+
+```python
+with open("file.txt") as f:
+    data = f.read()
+```
+
+---
+
+### 4️⃣0️⃣ What is a context manager?
+
+**Answer:**
+An object that manages resources using `__enter__` and `__exit__`.
+
+---
+
+## 🔹 PYTHON PERFORMANCE & MEMORY
+
+### 4️⃣1️⃣ Why Python is slower than C++?
+
+**Answer:**
+
+* Interpreted language
+* Dynamic typing
+* GIL
+* Extra memory overhead
+
+---
+
+### 4️⃣2️⃣ How to optimize Python code?
+
+**Answer:**
+
+* Use NumPy vectorization
+* Avoid loops
+* Use generators
+* Use multiprocessing
+* Profile code
+
+---
+
+### 4️⃣3️⃣ What is `cProfile`?
+
+**Answer:**
+Used to analyze function execution time.
+
+---
+
+### 4️⃣4️⃣ What is garbage collection?
+
+**Answer:**
+Automatic removal of unused objects using reference counting and cyclic GC.
+
+---
+
+### 4️⃣5️⃣ What is reference counting?
+
+**Answer:**
+Each object keeps count of references.
+When count becomes zero → object deleted.
+
+---
+
+## 🔹 MULTITHREADING / MULTIPROCESSING
+
+### 4️⃣6️⃣ What is a race condition?
+
+**Answer:**
+When multiple threads access shared data and the result depends on execution order.
+
+---
+
+### 4️⃣7️⃣ How to avoid race conditions?
+
+**Answer:**
+
+* Locks
+* Semaphores
+* Queues
+
+---
+
+### 4️⃣8️⃣ What is a deadlock?
+
+**Answer:**
+Two threads wait forever for each other to release resources.
+
+---
+
+### 4️⃣9️⃣ When to use multithreading?
+
+**Answer:**
+For I/O-bound tasks (file, network, camera input).
+
+---
+
+### 5️⃣0️⃣ When to use multiprocessing?
+
+**Answer:**
+For CPU-bound tasks (ML inference, heavy computation).
+
+---
+
+## 🔹 PYTHON + ML INTERVIEW QUESTIONS (VERY IMPORTANT)
+
+### 5️⃣1️⃣ Explain ML pipeline in Python
+
+**Answer:**
+Data collection → preprocessing → model training → evaluation → deployment
+
+---
+
+### 5️⃣2️⃣ What is data preprocessing?
+
+**Answer:**
+
+* Handling missing values
+* Normalization
+* Encoding categorical data
+* Noise removal
+
+---
+
+### 5️⃣3️⃣ Why NumPy is faster than lists?
+
+**Answer:**
+
+* Uses contiguous memory
+* Written in C
+* Vectorized operations
+
+---
+
+### 5️⃣4️⃣ What is Pandas DataFrame?
+
+**Answer:**
+2D labeled data structure similar to an Excel table.
+
+---
+
+### 5️⃣5️⃣ Difference between `.loc` and `.iloc`?
+
+**Answer:**
+
+* `.loc` → label-based
+* `.iloc` → index-based
+
+---
+
+### 5️⃣6️⃣ What is batch processing in ML?
+
+**Answer:**
+Processing data in chunks to reduce memory usage and improve speed.
+
+---
+
+### 5️⃣7️⃣ What is overfitting?
+
+**Answer:**
+Model performs well on training data but poorly on unseen data.
+
+---
+
+### 5️⃣8️⃣ How do you improve ML performance?
+
+**Answer:**
+
+* More data
+* Better features
+* Hyperparameter tuning
+* Regularization
+
+---
+
+### 5️⃣9️⃣ How Python is used in real-time ML systems?
+
+**Answer:**
+
+* Frame preprocessing
+* Model inference
+* Post-processing
+* Automation & orchestration
+
+---
+
+### 6️⃣0️⃣ How do you explain Python role in your project?
+
+**Best Answer:**
+“Python is used for ML model integration, video processing, tracking, OCR, performance optimization, and automation. Critical latency-sensitive parts are optimized using GPU and native libraries.”
+
 ```
